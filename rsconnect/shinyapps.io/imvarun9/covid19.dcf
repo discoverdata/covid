@@ -1,0 +1,13 @@
+name: covid19
+title: covid19
+username: imvarun9
+account: imvarun9
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10141504
+bundleId: 7783075
+url: https://imvarun9.shinyapps.io/covid19/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: 2356dee849bc4db1bcaa8d53fa42d42b.tar

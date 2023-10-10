@@ -1,0 +1,20 @@
+# Introduction
+
+In **December 2019, Covid-19 coronavirus was first identified in the Wuhan region of China**. By March 11, 2020, the World Health Organization (WHO) categorized the COVID-19 outbreak as a pandemic. A lot has happened in the months in between with major outbreaks in Europe and United States.
+
+We now know that Covid-19 spreads through respiratory droplets, such as through coughing, sneezing, or speaking. But, how quickly did the virus spread across the globe? And, can we see any effect from country-wide policies, like shutdowns and quarantines?
+
+# What is Coronavirus 
+
+Coronaviruses are a large family of viruses that can make humans and animals sick. They cause a respiratory illness that can range from the common cold to more severe diseases. Symptoms range from a mild cough to pneumonia. Some people recover easily, others may get very sick very quickly. There is evidence that it spreads from person to person. Good hygiene can prevent infection.
+
+![Virus Image](CDC-coronavirus-image.jpg)
+
+
+# Objective
+
+This main aim of this shiny app is to visualize and explore the **total coronavirus (COVID-19) reported cases, deaths and recovery** around the world. Additionally, we can also see the growth of these cases for different countries over time. 
+
+# Important link
+
+[WHO resource](https://www.who.int/emergencies/diseases/novel-coronavirus-2019)

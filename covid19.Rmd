@@ -1,0 +1,165 @@
+---
+title: "Covid-19"
+output: html_notebook
+---
+
+
+```{r load_libraries}
+library("readr")
+library("dplyr")
+library("stringr")
+library("tidyr")
+library("lubridate")
+library("ggplot2")
+library("plotly")
+library("shiny")
+library("DT")
+
+# Load the data
+raw_data<- read_csv("data/time_series_19-covid-Confirmed14-03-2020.csv")
+country_codes <- read_csv("country_codes.csv") 
+df <- gather(raw_data, key = Date, value = cases, -c(1,2,3,4))
+
+# Prepare the data
+names(df) <- c("Province", "Country", "Lat", "Long", "Date", "Cases")
+
+# let us give the standard names to countries
+df <- df %>% mutate(Country = case_when(Country == "US" ~ "United States of America", 
+                                  Country == "Macau" ~ "Macao SAR", 
+                                  Country == "Hong Kong" ~ "Hong Kong SAR",
+                                  Country == "Mainland China" ~ "China",
+                                  Country == "UK" ~ "United Kingdom",
+                                  Country == "Iran (Islamic Republic of)" ~ "Iran",
+                                  Country == "Republic of Korea" ~ "South Korea", 
+                                  Country == "Taipei and environs" ~ "Taiwan",
+                                  Country == "Viet Nam" ~ "Vietnam",
+                                  Country == "occupied Palestinian territory" ~ "Palestinian Territory",
+                                  Country == "Russia" ~ "Russian Federation",
+                                  Country == "Congo (Kinshasa)" ~ "Congo",
+                                  Country == "Taiwan*" ~ "Taiwan",
+                                  Country == "Czechia" ~ "Czech Republic",
+                                  Country == "Korea, South" ~ "South Korea",
+                                  Country == "Republic of Ireland" ~ "Ireland",
+                                  Country == "Cruise Ship" ~ "Others",
+                                  TRUE ~ Country), 
+                    Date = mdy(Date))
+
+df <- left_join(df, country_codes, by = c("Country" = "country"))
+
+data <- df %>% group_by(Date,Country) %>% summarise(Total_cases = sum(Cases)) %>% left_join(country_codes, by = c("Country" = "country"))
+
+# Growth rate of countries
+growth_rate <- sapply(unique(df$Country), function(x) 
+  df %>% filter(Country == x ) %>% group_by(Date, Country) %>% summarise(total_cases = sum(Cases) + 1) %>% ungroup() %>% mutate(day_diff = as.integer(Date - lag(Date)), growth_diff = total_cases - lag(total_cases), rate_diff = (growth_diff/day_diff)/lag(total_cases) * 100) %>% pull(rate_diff)) %>% as.data.frame()
+
+growth_rate <- mutate(growth_rate, Date = unique(df$Date))
+
+# replace all NA with 0
+growth_rate[is.na(growth_rate)] <- 0
+
+growth_rate <- growth_rate %>% gather(key = "Country", value = "Rate_of_Growth", -Date)
+ 
+data <- df %>% group_by(Date,Country) %>% summarise(Total_cases = sum(Cases)) %>% left_join(country_codes, by = c("Country" = "country"))
+
+```
+
+```{r shiny}
+# Define UI for application that draws a histogram
+ui <- navbarPage("Covid 19",selected = "Total cases",inverse = TRUE, collapsible = TRUE,
+                 tabPanel("Total cases",
+                          fluidPage(
+                                   sidebarLayout(
+                                                 sidebarPanel(
+                                                   # Select Country
+                                                   checkboxGroupInput(inputId = "filter1", label = "Filter data by:",
+                                                      choices = sort(unique(df$Country)),
+                                                      selected = "China", inline = TRUE),
+                                                   
+                                                   
+                                                   sliderInput("slider", label = h4("Date (Slider)"),
+                                                               min = min(df$Date), max = max(df$Date), value = c(min(df$Date), max(df$Date))
+                                                               ),
+                                                   checkboxGroupInput(inputId = "filter2", label = "Filter data by:", choices = c("Africa", "Americas","Asia","Eastern Asia", "Europe", "Oceania"))
+                                                 ), # sidebarPanel ends
+                          # Output
+                          mainPanel(plotlyOutput(outputId = "lineplot1", height = "400", width = "100%"),
+                                 DT::dataTableOutput(outputId = "table1", width = "100%")) # mainPanel ends
+                                
+                            ) # sidebarLayout ends
+                          )),
+                 tabPanel("Growth", 
+                          fluidPage(
+                            sidebarLayout(
+                              sidebarPanel(
+                                # Select Country
+                                  checkboxGroupInput(inputId = "filter3", label = "Filter data by:",
+                                    choices = sort(unique(df$Country)),
+                                      selected = "China", inline = TRUE)
+                          
+                                ), # SidebarPanel ends
+                            
+                              # Output
+                              mainPanel(plotlyOutput(outputId = "lineplot2", height = "400", width = "100%"),
+                                        DT::dataTableOutput(outputId = "table2", width = "100%"))
+                              ) # SidebarLayout ends
+                          
+                          ) # fluidPage ends
+                          ), # tabPanel ends andd , here
+                 tabPanel("About", includeMarkdown("about.Rmd")),
+                 tabPanel("Code", pre(includeText("app.R")))
+)
+
+# Define server function 
+server <- function(input, output) {
+  # Create scatterplot object the plotOutput function is expecting
+  output$lineplot1 <- renderPlotly({
+    # req(input$Date)
+    lower_date <- (input$slider)[1]
+    upper_date <- input$slider[2]
+
+    # Plot the data
+    subdata <- data %>% filter(Country %in% input$filter1 | region %in% input$filter2) %>%
+      filter(Date >= lower_date & Date <= upper_date)
+    
+      plot_ly(subdata, x = ~Date, y = ~Total_cases, mode = 'bar', type = 'scatter', color = ~Country)
+    
+  })
+  
+  # Create data table1 for first plot
+    output$table1 <- DT::renderDataTable({
+
+    lower_date <- (input$slider)[1]
+    upper_date <- input$slider[2]
+    
+    subdata <- data %>% filter(Country %in% c(input$filter1) | region %in% c(input$filter2)) %>%
+      group_by(Date, Country) %>% summarise(Total_cases = sum(Total_cases)) %>%
+      filter(Date >= lower_date & Date <= upper_date) %>% 
+      spread(key = Country, value = Total_cases)
+  
+        # Make the data table
+        DT::datatable(subdata, options = list(lengthMenu = c(5, 30, 50), pageLength = 10))
+    })
+  
+  # Create a growth plot
+    output$lineplot2 <- renderPlotly({
+       subdata1 <- growth_rate %>% filter(Country %in% input$filter3)
+       #print(subdata2)
+       plot_ly(subdata1, x = ~Date, y = ~Rate_of_Growth, mode = "lines+markers", type = 'scatter', color = ~Country)
+       })
+    
+  # Create data table2 for second plot
+  output$table2 <- renderDataTable({
+    print(input$filter3)
+
+      subdata2 <- growth_rate %>% filter(Country %in% input$filter3) %>% 
+        spread(key = Country,value = Rate_of_Growth)
+  
+      DT::datatable(subdata2, options = list(lengthMenu= c(5, 30, 50), pageLength = 10))
+ 
+  })
+
+}
+
+# Run the application 
+shinyApp(ui = ui, server = server)
+```

@@ -1,0 +1,252 @@
+country_code,is_independent,status,landlocked,country,region
+TWN,Yes,Developing,No,Taiwan,Asia
+AFG,Yes,Developing,Yes,Afghanistan,Asia
+ALB,Yes,Developed,No,Albania,Europe
+DZA,Yes,Developing,No,Algeria,Africa
+ASM,Territory of US,Developing,No,American Samoa,Oceania
+AND,Yes,Developed,No,Andorra,Europe
+AGO,Yes,Developing,No,Angola,Africa
+AIA,Territory of GB,Developing,No,Anguilla,Americas
+ATA,International,Developing,No,Antarctica,Antarctica
+ATG,Yes,Developing,No,Antigua and Barbuda,Americas
+ARG,Yes,Developing,No,Argentina,Americas
+ARM,Yes,Developing,Yes,Armenia,Asia
+ABW,Part of NL,Developing,No,Aruba,Americas
+AUS,Yes,Developed,No,Australia,Oceania
+AUT,Yes,Developed,No,Austria,Europe
+AZE,Yes,Developing,Yes,Azerbaijan,Asia
+BHS,Yes,Developing,No,Bahamas,Americas
+BHR,Yes,Developing,No,Bahrain,Asia
+BGD,Yes,Developing,No,Bangladesh,Asia
+BRB,Yes,Developing,No,Barbados,Americas
+BLR,Yes,Developed,No,Belarus,Europe
+BEL,Yes,Developed,No,Belgium,Europe
+BLZ,Yes,Developing,No,Belize,Americas
+BEN,Yes,Developing,No,Benin,Africa
+BMU,Territory of GB,Developed,No,Bermuda,Americas
+BTN,Yes,Developing,Yes,Bhutan,Asia
+BOL,Yes,Developing,Yes,Bolivia,Americas
+BES,Part of NL,Developing,No,Bonaire, SINT EUSTATIUS AND SABA
+BIH,Yes,Developed,No,Bosnia and Herzegovina,Europe
+BWA,Yes,Developing,Yes,Botswana,Africa
+BVT,Territory of NO,Developing,No,Bouvet Island,Americas
+BRA,Yes,Developing,No,Brazil,Americas
+IOT,Territory of GB,Developing,No,British Indian Ocean Territory,Africa
+VGB,Territory of GB,Developing,No,British Virgin Islands,Americas
+BRN,Yes,Developing,No,Brunei,Asia
+BGR,Yes,Developed,No,Bulgaria,Europe
+BFA,Yes,Developing,Yes,Burkina Faso,Africa
+BDI,Yes,Developing,Yes,Burundi,Africa
+CPV,Yes,Developing,No,Cape Verde,Africa
+KHM,Yes,Developing,No,Cambodia,Asia
+CMR,Yes,Developing,No,Cameroon,Africa
+CAN,Yes,Developed,No,Canada,Americas
+CYM,Territory of GB,Developing,No,Cayman Islands,Americas
+CAF,Yes,Developing,Yes,Central African Republic,Africa
+TCD,Yes,Developing,Yes,Chad,Africa
+CHL,Yes,Developing,No,Chile,Americas
+CHN,Yes,Developing,No,China,Asia
+HKG,Part of CN,Developing,No,Hong Kong SAR,Eastern Asia
+MAC,Part of CN,Developing,No,Macau SAR,Eastern Asia
+CXR,Territory of AU,Developed,No,Christmas Island,Oceania
+CCK,Territory of AU,Developed,No,Cocos (Keeling) Islands,Oceania
+COL,Yes,Developing,No,Colombia,Americas
+COM,Yes,Developing,No,Comoros,Africa
+COG,Yes,Developing,No,Congo,Africa
+COK,Associated with NZ,Developing,No,Cook Islands,Oceania
+CRI,Yes,Developing,No,Costa Rica,Americas
+HRV,Yes,Developed,No,Croatia,Europe
+CUB,Yes,Developing,No,Cuba,Americas
+CUW,Part of NL,Developing,No,Curacao,Americas
+CYP,Yes,Developed,No,Cyprus,Asia
+CZE,Yes,Developed,No,Czech Republic,Europe
+CIV,Yes,Developing,No,Cote d'Ivoire,Africa
+PRK,Yes,Developing,No,Korea DPR,Asia
+COD,Yes,Developing,No,Congo Dem. Rep.,Africa
+DNK,Yes,Developed,No,Denmark,Europe
+DJI,Yes,Developing,No,Djibouti,Africa
+DMA,Yes,Developing,No,Dominica,Americas
+DOM,Yes,Developing,No,Dominican Republic,Americas
+ECU,Yes,Developing,No,Ecuador,Americas
+EGY,Yes,Developing,No,Egypt,Africa
+SLV,Yes,Developing,No,El Salvador,Americas
+GNQ,Yes,Developing,No,Equatorial Guinea,Africa
+ERI,Yes,Developing,No,Eritrea,Africa
+EST,Yes,Developed,No,Estonia,Europe
+SWZ,Yes,Developing,Yes,Eswatini,Africa
+ETH,Yes,Developing,Yes,Ethiopia,Africa
+FLK,Territory of GB,Developing,No,Falkland Islands (Malvinas),Americas
+FRO,Part of DK,Developed,No,Faroe Islands,Europe
+FJI,Yes,Developing,No,Fiji,Oceania
+FIN,Yes,Developed,No,Finland,Europe
+FRA,Yes,Developed,No,France,Europe
+GUF,Part of FR,Developing,No,French Guiana,Americas
+PYF,Territory of FR,Developing,No,French Polynesia,Oceania
+ATF,Territory of FR,Developing,No,French Southern Territories,Africa
+GAB,Yes,Developing,No,Gabon,Africa
+GMB,Yes,Developing,No,Gambia,Africa
+GEO,Yes,Developing,No,Georgia,Asia
+DEU,Yes,Developed,No,Germany,Europe
+GHA,Yes,Developing,No,Ghana,Africa
+GIB,Territory of GB,Developed,No,Gibraltar,Europe
+GRC,Yes,Developed,No,Greece,Europe
+GRL,Part of DK,Developed,No,Greenland,Americas
+GRD,Yes,Developing,No,Grenada,Americas
+GLP,Part of FR,Developing,No,Guadeloupe,Americas
+GUM,Territory of US,Developing,No,Federated States of Micronesia,Oceania
+GTM,Yes,Developing,No,Guatemala,Americas
+GGY,Crown dependency of GB,Developed,No,Guernsey,Europe
+GIN,Yes,Developing,No,Guinea,Africa
+GNB,Yes,Developing,No,Guinea-Bissau,Africa
+GUY,Yes,Developing,No,Guyana,Americas
+HTI,Yes,Developing,No,Haiti,Americas
+HMD,Territory of AU,Developed,No,Heard Island and McDonald Islands,Oceania
+VAT,Yes,Developed,No,Holy See,Europe
+HND,Yes,Developing,No,Honduras,Americas
+HUN,Yes,Developed,No,Hungary,Europe
+ISL,Yes,Developed,No,Iceland,Europe
+IND,Yes,Developing,No,India,Asia
+IDN,Yes,Developing,No,Indonesia,Asia
+IRN,Yes,Developing,No,Iran,Asia
+IRQ,Yes,Developing,No,Iraq,Asia
+IRL,Yes,Developed,No,Ireland,Europe
+IMN,Crown dependency of GB,Developed,No,Isle of Man,Europe
+ISR,Yes,Developed,No,Israel,Asia
+ITA,Yes,Developed,No,Italy,Europe
+JAM,Yes,Developing,No,Jamaica,Americas
+JPN,Yes,Developed,No,Japan,Asia
+JEY,Crown dependency of GB,Developed,No,Jersey,Europe
+JOR,Yes,Developing,No,Jordan,Asia
+KAZ,Yes,Developing,Yes,Kazakhstan,Asia
+KEN,Yes,Developing,No,Kenya,Africa
+KIR,Yes,Developing,No,Kiribati,Oceania
+KWT,Yes,Developing,No,Kuwait,Asia
+KGZ,Yes,Developing,Yes,Kyrgyzstan,Asia
+LAO,Yes,Developing,Yes,Laos,Asia
+LVA,Yes,Developed,No,Latvia,Europe
+LBN,Yes,Developing,No,Lebanon,Asia
+LSO,Yes,Developing,Yes,Lesotho,Africa
+LBR,Yes,Developing,No,Liberia,Africa
+LBY,Yes,Developing,No,Libya,Africa
+LIE,Yes,Developed,No,Liechtenstein,Europe
+LTU,Yes,Developed,No,Lithuania,Europe
+LUX,Yes,Developed,No,Luxembourg,Europe
+MDG,Yes,Developing,No,Madagascar,Africa
+MWI,Yes,Developing,Yes,Malawi,Africa
+MYS,Yes,Developing,No,Malaysia,Asia
+MDV,Yes,Developing,No,Maldives,Asia
+MLI,Yes,Developing,Yes,Mali,Africa
+MLT,Yes,Developed,No,Malta,Europe
+MHL,Yes,Developing,No,Marshall Islands,Oceania
+MTQ,Part of FR,Developing,No,Martinique,Americas
+MRT,Yes,Developing,No,Mauritania,Africa
+MUS,Yes,Developing,No,Mauritius,Africa
+MYT,Part of FR,Developing,No,Mayotte,Africa
+MEX,Yes,Developing,No,Mexico,Americas
+FSM,Yes,Developing,No,Micronesia (Federated States of),Oceania
+MCO,Yes,Developed,No,Monaco,Europe
+MNG,Yes,Developing,Yes,Mongolia,Asia
+MNE,Yes,Developed,No,Montenegro,Europe
+MSR,Territory of GB,Developing,No,Montserrat,Americas
+MAR,Yes,Developing,No,Morocco,Africa
+MOZ,Yes,Developing,No,Mozambique,Africa
+MMR,Yes,Developing,No,Myanmar,Asia
+NAM,Yes,Developing,No,Namibia,Africa
+NRU,Yes,Developing,No,Nauru,Oceania
+NPL,Yes,Developing,Yes,Nepal,Asia
+NLD,Yes,Developed,No,Netherlands,Europe
+NCL,Territory of FR,Developing,No,New Caledonia,Oceania
+NZL,Yes,Developed,No,New Zealand,Oceania
+NIC,Yes,Developing,No,Nicaragua,Americas
+NER,Yes,Developing,Yes,Niger,Africa
+NGA,Yes,Developing,No,Nigeria,Africa
+NIU,Associated with NZ,Developing,No,Niue,Oceania
+NFK,Territory of AU,Developed,No,Norfolk Island,Oceania
+MNP,Commonwealth of US,Developing,No,Northern Mariana Islands,Oceania
+NOR,Yes,Developed,No,Norway,Europe
+OMN,Yes,Developing,No,Oman,Asia
+PAK,Yes,Developing,No,Pakistan,Asia
+PLW,Yes,Developing,No,Palau,Oceania
+PAN,Yes,Developing,No,Panama,Americas
+PNG,Yes,Developing,No,Papua New Guinea,Oceania
+PRY,Yes,Developing,Yes,Paraguay,Americas
+PER,Yes,Developing,No,Peru,Americas
+PHL,Yes,Developing,No,Philippines,Asia
+PCN,Territory of GB,Developing,No,Pitcairn,Oceania
+POL,Yes,Developed,No,Poland,Europe
+PRT,Yes,Developed,No,Portugal,Europe
+PRI,Commonwealth of US,Developing,No,Puerto Rico,Americas
+QAT,Yes,Developing,No,Qatar,Asia
+KOR,Yes,Developing,No,South Korea,Asia
+MDA,Yes,Developed,Yes,Republic of Moldova,Europe
+ROU,Yes,Developed,No,Romania,Europe
+RUS,Yes,Developed,No,Russian Federation,Europe
+RWA,Yes,Developing,Yes,Rwanda,Africa
+REU,Part of FR,Developing,No,Reunion,Africa
+BLM,Part of FR,Developing,No,Saint Barthelemy,Americas
+SHN,Territory of GB,Developing,No,Saint Helena,Africa
+KNA,Yes,Developing,No,Saint Kitts and Nevis,Americas
+LCA,Yes,Developing,No,Saint Lucia,Americas
+MAF,Part of FR,Developing,No,Saint Martin,Americas
+SPM,Part of FR,Developed,No,Saint Pierre and Miquelon,Americas
+VCT,Yes,Developing,No,Saint Vincent and the Grenadines,Americas
+WSM,Yes,Developing,No,Samoa,Oceania
+SMR,Yes,Developed,No,San Marino,Europe
+STP,Yes,Developing,No,Sao Tome and Principe,Africa
+SAU,Yes,Developing,No,Saudi Arabia,Asia
+SEN,Yes,Developing,No,Senegal,Africa
+SRB,Yes,Developed,No,Serbia,Europe
+SYC,Yes,Developing,No,Seychelles,Africa
+SLE,Yes,Developing,No,Sierra Leone,Africa
+SGP,Yes,Developing,No,Singapore,Asia
+SXM,Part of NL,Developing,No,Sint Maarten (Dutch part),Americas
+SVK,Yes,Developed,No,Slovakia,Europe
+SVN,Yes,Developed,No,Slovenia,Europe
+SLB,Yes,Developing,No,Solomon Islands,Oceania
+SOM,Yes,Developing,No,Somalia,Africa
+ZAF,Yes,Developing,No,South Africa,Africa
+SGS,Territory of GB,Developing,No,South Georgia and the South Sandwich Islands,Americas
+SSD,Yes,Developing,Yes,South Sudan,Africa
+ESP,Yes,Developed,No,Spain,Europe
+LKA,Yes,Developing,No,Sri Lanka,Asia
+PSE,In contention,Developing,No,Palestinian Territory, Occupied
+SDN,Yes,Developing,No,Sudan,Africa
+SUR,Yes,Developing,No,Suriname,Americas
+SJM,Territory of NO,Developed,No,Svalbard and Jan Mayen Islands,Europe
+SWE,Yes,Developed,No,Sweden,Europe
+CHE,Yes,Developed,No,Switzerland,Europe
+SYR,Yes,Developing,No,Syria,Asia
+TJK,Yes,Developing,Yes,Tajikistan,Asia
+THA,Yes,Developing,No,Thailand,Asia
+MKD,Yes,Developed,Yes,North Macedonia,Europe
+TLS,Yes,Developing,No,Timor-Leste,Asia
+TGO,Yes,Developing,No,Togo,Africa
+TKL,Territory of NZ,Developing,No,Tokelau,Oceania
+TON,Yes,Developing,No,Tonga,Oceania
+TTO,Yes,Developing,No,Trinidad and Tobago,Americas
+TUN,Yes,Developing,No,Tunisia,Africa
+TUR,Yes,Developing,No,Turkey,Asia
+TKM,Yes,Developing,Yes,Turkmenistan,Asia
+TCA,Territory of GB,Developing,No,Turks and Caicos Islands,Americas
+TUV,Yes,Developing,No,Tuvalu,Oceania
+UGA,Yes,Developing,Yes,Uganda,Africa
+UKR,Yes,Developed,No,Ukraine,Europe
+ARE,Yes,Developing,No,United Arab Emirates,Asia
+GBR,Yes,Developed,No,United Kingdom,Europe
+TZA,Yes,Developing,No,Tanzania,Africa
+UMI,Territories of US,Developing,No,United States Minor Outlying Islands,Oceania
+VIR,Territory of US,Developing,No,United States Virgin Islands,Americas
+USA,Yes,Developed,No,United States of America,Americas
+URY,Yes,Developing,No,Uruguay,Americas
+UZB,Yes,Developing,Yes,Uzbekistan,Asia
+VUT,Yes,Developing,No,Vanuatu,Oceania
+VEN,Yes,Developing,No,Venezuela,Americas
+VNM,Yes,Developing,No,Vietnam,Asia
+WLF,Territory of FR,Developing,No,Wallis and Futuna Islands,Oceania
+ESH,In contention,Developing,No,Western Sahara,Africa
+YEM,Yes,Developing,No,Yemen,Asia
+ZMB,Yes,Developing,Yes,Zambia,Africa
+ZWE,Yes,Developing,Yes,Zimbabwe,Africa
+ALA,Part of FI,Developed,No,Aland Islands,Europe
+Others,International,Others,No,Diamond Cruise Ship,Others
+Others,International,Others,No,MS Zaandam,Others
